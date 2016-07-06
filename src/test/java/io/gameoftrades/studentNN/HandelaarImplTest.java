@@ -63,12 +63,12 @@ public class HandelaarImplTest {
         // Heen
 
         Coordinaat bestemming = pad.volg(van.getCoordinaat());
-        assertEquals(naar, bestemming);
+        assertEquals(naar.getCoordinaat(), bestemming);
 
         // En Terug
 
         Coordinaat bron = pad.omgekeerd().volg(naar.getCoordinaat());
-        assertEquals(van, bron);
+        assertEquals(van.getCoordinaat(), bron);
     }
 
     @Test
