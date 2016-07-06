@@ -1,0 +1,10 @@
+5,5    
+SZZZZ  
+ZZZZZ   
+ZZZZZ    
+ZZZZZ   
+ZZZZZ  
+1  
+1,1,Stad
+1  
+Stad,BIEDT,schapen,12  
