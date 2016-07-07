@@ -3,7 +3,7 @@
 
     <groupId>io.gameoftrades</groupId>
     <artifactId>gameoftrades-student-kit</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Game of Trades Student Starter Kit</name>
     <description>Student starter kit for Game of Trades</description>

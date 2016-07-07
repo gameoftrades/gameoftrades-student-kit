@@ -12,6 +12,9 @@ import org.junit.Test;
 
 import io.gameoftrades.model.Handelaar;
 import io.gameoftrades.model.Wereld;
+import io.gameoftrades.model.algoritme.HandelsplanAlgoritme;
+import io.gameoftrades.model.algoritme.SnelstePadAlgoritme;
+import io.gameoftrades.model.algoritme.StedenTourAlgoritme;
 import io.gameoftrades.model.kaart.Coordinaat;
 import io.gameoftrades.model.kaart.Kaart;
 import io.gameoftrades.model.kaart.Pad;
@@ -20,6 +23,7 @@ import io.gameoftrades.model.lader.WereldLader;
 import io.gameoftrades.model.markt.Handelsplan;
 import io.gameoftrades.model.markt.actie.Actie;
 import io.gameoftrades.model.markt.actie.BeweegActie;
+import io.gameoftrades.model.markt.actie.HandelsPositie;
 
 /**
  * Een verzameling eenvoudige tests om te kijken of de handelaar werkt.
@@ -47,12 +51,16 @@ public class HandelaarImplTest {
     @Test
     public void zouEenPadMoetenVinden() {
         Wereld wereld = handelaar.nieuweWereldLader().laad("/kaarten/voorbeeld-kaart.txt");
+        assertNotNull(wereld);
         
         Kaart kaart = wereld.getKaart();
         Stad van = wereld.getSteden().get(0);
         Stad naar = wereld.getSteden().get(1);
 
-        Pad pad = handelaar.bepaalSnelstePad(kaart, van, naar);
+        SnelstePadAlgoritme algoritme = handelaar.nieuwSnelstePadAlgoritme();
+        assertNotNull(algoritme);
+
+        Pad pad = algoritme.bereken(kaart, van.getCoordinaat(), naar.getCoordinaat());
 
         assertNotNull(pad.getBewegingen());
 
@@ -74,8 +82,12 @@ public class HandelaarImplTest {
     @Test
     public void zouEenRouteMoetenVinden() {
         Wereld wereld = handelaar.nieuweWereldLader().laad("/kaarten/voorbeeld-kaart.txt");
+        assertNotNull(wereld);
 
-        List<Stad> result = handelaar.stedenTour(wereld.getKaart(), wereld.getSteden());
+        StedenTourAlgoritme algoritme = handelaar.nieuwStedenTourAlgoritme();
+        assertNotNull(algoritme);
+
+        List<Stad> result = algoritme.bereken(wereld.getKaart(), wereld.getSteden());
 
         assertNotNull(result);
         assertEquals(4, result.size());
@@ -85,10 +97,12 @@ public class HandelaarImplTest {
     @Test
     public void zouEenHandelsplanMoetenMaken() {
         Wereld wereld = handelaar.nieuweWereldLader().laad("/kaarten/voorbeeld-kaart.txt");
+        assertNotNull(wereld);
         
         Stad startStad = wereld.getSteden().get(0);
         
-        Handelsplan plan = handelaar.optimaliseerWinst(wereld, startStad, 150, 10, 50);
+        HandelsplanAlgoritme algoritme = handelaar.nieuwHandelsplanAlgoritme();
+        Handelsplan plan = algoritme.bereken(wereld, new HandelsPositie(wereld, startStad, 150, 10, 50));
 
         assertNotNull(plan);
         assertNotNull(plan.getActies());

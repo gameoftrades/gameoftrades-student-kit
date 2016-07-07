@@ -1,14 +1,10 @@
 package io.gameoftrades.studentNN;
 
-import java.util.List;
-
 import io.gameoftrades.model.Handelaar;
-import io.gameoftrades.model.Wereld;
-import io.gameoftrades.model.kaart.Kaart;
-import io.gameoftrades.model.kaart.Pad;
-import io.gameoftrades.model.kaart.Stad;
+import io.gameoftrades.model.algoritme.HandelsplanAlgoritme;
+import io.gameoftrades.model.algoritme.SnelstePadAlgoritme;
+import io.gameoftrades.model.algoritme.StedenTourAlgoritme;
 import io.gameoftrades.model.lader.WereldLader;
-import io.gameoftrades.model.markt.Handelsplan;
 
 /**
  * Welkom bij Game of Trades! 
@@ -35,7 +31,7 @@ public class HandelaarImpl implements Handelaar {
      * Opdracht 2
      */
     @Override
-    public Pad bepaalSnelstePad(Kaart kaart, Stad van, Stad naar) {
+    public SnelstePadAlgoritme nieuwSnelstePadAlgoritme() {
         // TODO Auto-generated method stub
         return null;
     }
@@ -44,7 +40,7 @@ public class HandelaarImpl implements Handelaar {
      * Opdracht 3
      */
     @Override
-    public List<Stad> stedenTour(Kaart kaart, List<Stad> steden) {
+    public StedenTourAlgoritme nieuwStedenTourAlgoritme() {
         // TODO Auto-generated method stub
         return null;
     }
@@ -53,9 +49,8 @@ public class HandelaarImpl implements Handelaar {
      * Opdracht 4
      */
     @Override
-    public Handelsplan optimaliseerWinst(Wereld wereld, Stad startStad, int kapitaal, int capaciteit, int maxTijd) {
+    public HandelsplanAlgoritme nieuwHandelsplanAlgoritme() {
         // TODO Auto-generated method stub
         return null;
     }
-
 }
