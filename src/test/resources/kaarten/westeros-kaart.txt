@@ -58,8 +58,8 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZ
 11,29,Riverrun
 15,30,Harrenhall
 4,33,Casterly Rock
-18,34,Lennisport
-3,35,Kings Landing
+18,34,Kings Landing
+3,35,Lannisport
 12,37,Bitter Bridge
 21,40,Storms End
 8,41,Highgarden
@@ -71,4 +71,48 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZ
 24,48,Sunspear
 9,49,Sandstone
 17,48,Vaith
-0
+44
+Oldtown,BIEDT,Arbor Gold,15
+Oldtown,BIEDT,Arbor Estate Red,10
+Oldtown,BIEDT,Dragon Stone,35
+Vaith,BIEDT,Dorne Grand Cru,15
+Highgarden,BIEDT,Sweet Reach Hippocras,15
+Highgarden,BIEDT,Valyrian Steel,25
+Lannisport,BIEDT,Casterly Late Harvest Red,15
+Lannisport,VRAAGT,Arbor Gold,20
+Lannisport,VRAAGT,Arbor Estate Red,20
+Lannisport,BIEDT,Milk of the Poppy,5
+Lannisport,VRAAGT,Valyrian Steel,36
+Casterly Rock,BIEDT,Casterly Late Harvest Red,20
+Sunspear,BIEDT,Lys 'The Lovely' White Blend,20
+Sunspear,BIEDT,Dragon Stone,30
+Storms End,BIEDT,Lys 'The Lovely' White Blend,25
+Kings Landing,VRAAGT,Valyrian Steel,40
+Kings Landing,VRAAGT,Arbor Gold,20
+Kings Landing,VRAAGT,Arbor Estate Red,20
+Kings Landing,VRAAGT,Dorne Grand Cru,20
+Kings Landing,VRAAGT,Sweet Reach Hippocras,20
+Kings Landing,VRAAGT,Casterly Late Harvest Red,22
+Kings Landing,VRAAGT,Lys 'The Lovely' White Blend,35
+Kings Landing,VRAAGT,Milk of the Poppy,10
+Kings Landing,BIEDT,Prisoners,1
+Kings Landing,VRAAGT,Bread,5
+Castle Black,VRAAGT,Prisoners,5
+Castle Black,VRAAGT,Dragon Stone,95
+Castle Black,BIEDT,Ice,1
+Winterfell,BIEDT,Wolf Skins,5
+Winterfell,BIEDT,Wood,5
+Nightsong,BIEDT,Tar,2
+Riverrun,VRAAGT,Wood,10
+Riverrun,BIEDT,Bread,1
+Riverrun,VRAAGT,Cow Dung,2
+Gulltown,VRAAGT,Tar,8
+Gulltown,VRAAGT,Wood,9
+Gulltown,BIEDT,Fish,2
+White Harbour,VRAAGT,Wood,7
+White Harbour,VRAAGT,Tar,10
+White Harbour,BIEDT,Fish,2
+The Eyrie,VRAAGT,Fish,5
+The Eyrie,BIEDT,Cow Dung,1
+Gulltown,VRAAGT,Bread,5
+Harrenhall,VRAAGT,Bread,3
