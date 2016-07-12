@@ -58,8 +58,8 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZ
 11,29,Riverrun
 15,30,Harrenhall
 4,33,Casterly Rock
-18,34,Kings Landing
 3,35,Lannisport
+18,34,Kings Landing
 12,37,Bitter Bridge
 21,40,Storms End
 8,41,Highgarden
