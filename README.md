@@ -59,6 +59,7 @@ Beiden bestanden moeten opgeleverd worden.
 ## Hoe begin ik?
 
 * Zorg eerst dat je een werkende ontwikkelomgeving hebt en de student-kit kunt bouwen.
+* Bestudeer het [gameoftrades-library project](https://github.com/gameoftrades/gameoftrades-library); deze bevat het domein model van de handels wereld. 
 * Rename het artifactId en de packagenaam naar die van je team.
 * Run de WereldLaderTest in je IDE en zorg dat alle testen gaan slagen door de WereldLaderImpl.java aan te passen.
 * Start de StudentUI en aanschouw de wereld.
