@@ -93,3 +93,21 @@ In de `src/test/java` folder, in de `nl.gameoftrades.ui` package staat een klass
 
 Let op: De visuele omgeving is afhankelijk van jouw implementatie van Handelaar. Zonder WereldLader kan hij de kaart niet tonen!   
 
+## Hoe maak ik mijn Algoritme visueel debugbaar?
+
+Door de interface `io.gameoftrades.debug.Debuggable` te implementeren in je Algoritme klasse.
+
+Deze zorgt er voor dat de methode `setDebugger(Debugger debugger)` in het Algoritme geimplementeerd moet worden.
+
+Als je dit als volgt doet dan heb je bij default een DummyDebugger (die niets doet) maar kan de gebruikersinterface de GuiDebugger zetten en jij, als je dat zou willen, de AsciiArtDebugger die naar de console debug uitvoer stuurt.
+
+```
+    private Debugger debug = new DummyDebugger();
+    
+    @Override
+    public void setDebugger(Debugger debugger) {
+        this.debug = debugger;
+    }
+```
+
+In de `Debugger` interface zitten verschillende methoden die domein objecten en andere data-structuren zichtbaar maken.
