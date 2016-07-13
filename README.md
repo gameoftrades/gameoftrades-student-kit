@@ -47,12 +47,15 @@ Omdat ieder team uniek is maar je net een algemene repository hebt gecloned is h
    
 ## Op te leveren artifacten voor beoordeling
 
-Na het uitvoeren van een `mvn clean install` vindt je in de `target` folder 2 bestanden:
+Er moeten twee bestanden worden opgeleverd voor de beoordeling van de algoritme implementaties:
 
-* got-teamNN-0.1.0.jar 
-* got-teamNN-0.1.0.sources.jar  
+* De zip file van de broncode, inclusief testen en pom.xml
 
-Beiden bestanden moeten opgeleverd worden.
+* Een jar file met daarin de uitvoerbare (gecompileerde) code.
+
+Deze jar file kun je maken door het uitvoeren van een `mvn clean install`.
+Wanneer dit gelukt is vindt je in de `target` folder de jar file (got-teamNN-1.0.jar). 
+
 
 # FAQ / How to
 
