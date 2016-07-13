@@ -6,10 +6,10 @@ Game of Trades stelt je in staat om op visuele en spelende wijze kennis te maken
 
 De student kit bestaat uit een Java Maven project met daarin een aantal folders:
 
-* src/main/java - hierin moet de bron code komen van de door jullie te maken handelaar. Er staan al wat files voor je klaar. 
-* src/test/java - hierin moet de bron code komen die de handelaar test. Sommige testen zijn al geschreven, doe er je voordeel mee!
-* src/test/resources - hierin staan een aantal kant en klare kaarten om te gebruiken.
-* pom.xml - dit is het bestand dat Maven vertelt hoe het project in elkaar zit en gebouwd moet worden.
+* `src/main/java` - hierin moet de bron code komen van de door jullie te maken handelaar. Er staan al wat files voor je klaar. 
+* `src/test/java` - hierin moet de bron code komen die de handelaar test. Sommige testen zijn al geschreven, doe er je voordeel mee!
+* `src/test/resources` - hierin staan een aantal kant en klare kaarten om te gebruiken.
+* `pom.xml` - dit is het bestand dat Maven vertelt hoe het project in elkaar zit en gebouwd moet worden.
 
 ## Voorbereiding
 
@@ -86,6 +86,14 @@ Uitvoeren van de testen:
 ```
 > mvn test
 ```
+## Wat is een `interface`? Wat betekent `implements`?
+
+Een Interface beschrijft een contract waaraan een klasse zich kan conformeren door deze interface te implementeren.
+
+Dat wil zeggen dat de methoden genoemd in de interface ook moeten voorkomen in de klasse. 
+Dit is Java zijn manier voor multiple inheritance.
+
+Doe de tutorial [voor meer inzicht](https://docs.oracle.com/javase/tutorial/java/concepts/interface.html).
 
 ## Starten van de visuele omgeving.
 
@@ -99,7 +107,7 @@ Door de interface `io.gameoftrades.debug.Debuggable` te implementeren in je Algo
 
 Deze zorgt er voor dat de methode `setDebugger(Debugger debugger)` in het Algoritme geimplementeerd moet worden.
 
-Als je dit als volgt doet dan heb je bij default een DummyDebugger (die niets doet) maar kan de gebruikersinterface de GuiDebugger zetten en jij, als je dat zou willen, de AsciiArtDebugger die naar de console debug uitvoer stuurt.
+Als je dit als volgt doet dan heb je bij default een `DummyDebugger` (die niets doet) maar kan de gebruikersinterface de GuiDebugger zetten en jij, als je dat zou willen, de `AsciiArtDebugger` die naar de console debug uitvoer stuurt.
 
 ```
     private Debugger debug = new DummyDebugger();
