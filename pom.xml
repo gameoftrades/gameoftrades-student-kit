@@ -2,7 +2,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.gameoftrades</groupId>
-    <artifactId>gameoftrades-student-kit</artifactId>
+    <!-- Change Me -->
+    <artifactId>gameoftrades-student-kit</artifactId> <!-- got-teamNN -->
+    <!-- --> 
     <version>0.1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Game of Trades Student Starter Kit</name>

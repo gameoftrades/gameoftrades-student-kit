@@ -11,6 +11,8 @@ De student kit bestaat uit een Java Maven project met daarin een aantal folders:
 * `src/test/resources` - hierin staan een aantal kant en klare kaarten om te gebruiken.
 * `pom.xml` - dit is het bestand dat Maven vertelt hoe het project in elkaar zit en gebouwd moet worden.
 
+De visuele omgeving maakt ook onderdeel uit van de student kit. Zie de 'Starten van de visuele omgeving' verderop.
+
 ## Voorbereiding
 
 Om met Game of Trades mee te kunnen doen heb je een werkende Java ontwikkelomgeving nodig. 
@@ -43,6 +45,13 @@ In de `gameoftrades-student-kit` folder staat nu de student kit, klaar om geimpo
 Omdat ieder team uniek is maar je net een algemene repository hebt gecloned is het _noodzakelijk_ om een aantal team specifieke aanpassingen te maken.
 
 * In de `pom.xml` pas de waarde van de `artifactId` tag aan naar `got-teamNN` waarbij NN dan het team nummer (2 digits) is. Is het team nummer kleiner dan 10, plak er dan een 0 voor.
+
+```xml
+    <!-- Change Me -->
+    <artifactId>gameoftrades-student-kit</artifactId> <!-- got-teamNN -->
+    <!-- --> 
+```
+
 * In je ontwikkelomgeving, hernoem de package `studentNN`. Ook hier moet NN het team nummer worden. 
    
 ## Op te leveren artifacten voor beoordeling
@@ -56,6 +65,7 @@ Er moeten twee bestanden worden opgeleverd voor de beoordeling van de algoritme 
 Deze jar file kun je maken door het uitvoeren van een `mvn clean install`.
 Wanneer dit gelukt is vindt je in de `target` folder de jar file (got-teamNN-1.0.jar). 
 
+Mochten je tests falen en je toch een jar willen maken dan kan dat met `mvn clean install -DskipTests`
 
 # FAQ / How to
 
