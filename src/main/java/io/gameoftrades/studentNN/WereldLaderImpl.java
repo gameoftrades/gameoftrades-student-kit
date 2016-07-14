@@ -7,7 +7,13 @@ public class WereldLaderImpl implements WereldLader {
 
     @Override
     public Wereld laad(String resource) {
-        // TODO Auto-generated method stub
+        //
+        // Gebruik this.getClass().getResourceAsStream(resource) om een resource van het classpath te lezen.
+        //
+        // Kijk in src/test/resources voor voorbeeld kaarten.
+        //
+        // TODO Laad de wereld!
+        //
         return null;
     }
 
