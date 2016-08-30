@@ -78,6 +78,11 @@ De volgende methode van Handelaar moet worden geïmplementeerd:
 
 SnelstePadAlgoritme is een interface waarvan een implementerende klasse gemaakt moet worden (`SnelstePadAlgoritmeImpl`).
 Deze implementerende klasse moet de methoden uit de interface bevatten. In dit geval is het er maar één, de `bereken` methode.
+
+```
+    Pad bereken(Kaart kaart, Coordinaat start, Coordinaat eind);
+```
+
 Deze `bereken` methode geeft een `Pad` terug. Dit is weer een interface waarvan weer een implementatie klasse gemaakt moet worden (`PadImpl`).
 Voor de functionaliteit die Pad moet aanbieden kan je in de JavaDoc van de Pad interface kijken.
 
@@ -103,10 +108,19 @@ De handelaar wil, vanuit Public Relations oogpunt, graag een keer alle steden la
 De volgende methode van Handelaar moet worden geïmplementeerd:
 
 ```
-StedenTourAlgoritme nieuwStedenTourAlgoritme();
+    StedenTourAlgoritme nieuwStedenTourAlgoritme();
 ```
 
-De oplossing bestaat uit de lijst van steden. De eerste stad in de lijst is de stad waar gestart wordt. De laatste stad in de lijst is de stad waar geëindigd wordt. De gehele lijst vormt op volgorde de route waarmee de handelaar de steden zal moeten aandoen.
+Van de `StedenTourAlgoritme` interface moet wederom een implementerende klasse gemaakt worden. De bereken methode moet je zelf weer implementeren.
+
+```
+    List<Stad> bereken(Kaart kaart, List<Stad> steden);
+```
+
+De oplossing bestaat uit de lijst van steden (de route). 
+De eerste stad in de lijst is de stad waar gestart wordt. 
+De laatste stad in de lijst is de stad waar geëindigd wordt. 
+De gehele lijst vormt op volgorde de route waarmee de handelaar de steden zal moeten aandoen.
 
 Een voorbeeld algoritme waarmee dit probleem kan worden opgelost is die voor het [travelling salesman probleem](https://en.wikipedia.org/wiki/Travelling_salesman_problem).
 
@@ -117,6 +131,10 @@ Eisen aan de opdracht:
 * De route moet kwaliteitief goed zijn.
 * De route moet efficiënt berekend worden.
 
+Tips:
+* Schrijf testen!
+* Het uitrekenen van een Pad is duur. Voorkom onnodig extra rekenwerk.
+
 Opdracht 4 - zoveel mogelijk winst in zo min mogelijk tijd
 ==========================================================
 
@@ -125,20 +143,33 @@ De bekroning van het systeem. De handelaar wil dat het systeem berekent hoe de w
 De volgende methode van Handelaar moet worden geïmplementeerd:
 
 ```
-HandelsplanAlgoritme nieuwHandelsplanAlgoritme();
+    HandelsplanAlgoritme nieuwHandelsplanAlgoritme();
 ```
 
-Het handelsplan bestaat uit een lijst van HandelsActies. Iedere HandelsActie kan één van de volgende acties bevatten:
-* beweeg naar stad (kost tijd)
-* koop goed in (kost geld, kost capaciteit)
-* verkoop goed (levert geld op, maakt capaciteit vrij)
+Net zoals bij de vorige opdracht moet deze interface weer van een implementatie voorzien worden en de bijpassende methode geïmplmenteerd worden.
+
+```
+    Handelsplan bereken(Wereld wereld, HandelsPositie positie);
+```
+
+Het handelsplan bestaat uit een lijst van Acties. Een `Actie` kan één van de volgende zijn:
+* `NavigeerActie` : beweegt van een coordinaat in een bepaalde richting (kost tijd). 
+* `BeweegActie` : beweegt van een stad naar een andere stad (kost tijd). Deze actie moet worden omgezet in NavigeerActies in het op te leveren plan. 
+* `KoopActie` : koop goed in (kost geld, kost capaciteit)
+* `VerkoopActie` : verkoop goed (levert geld op, maakt capaciteit vrij)
+* `StopActie` : Eindigt het handelsplan (terwijl er nog tijd over is). 
 
 De simulatie zal alle acties in volgorde uitvoeren. Als een actie is ingebracht die niet uitvoerbaar is, dan zal het systeem eindigen met een foutmelding.
 
 Eisen aan de opdracht:
 * het algoritme moet gebruik maken van het eigen kortste pad algoritme van een eerdere opdracht.
+* het handelsplan mag geen zetten doen die niet kunnen.
+* het handelsplan moet `NavigeerActie`s aanleveren voor beweging (geen BeweegActies). 
 * Het handelsplan moet kwaliteitief goed zijn (dwz winst maken en liefst veel!).
 * Het handelsplan moet efficiënt berekend worden.
 
-Een manier om het probleem op te lossen is met een (beslissingsboom)[https://en.wikipedia.org/wiki/Decision_tree_model].
+Een manier om het probleem op te lossen is met een [beslissingsboom](https://en.wikipedia.org/wiki/Decision_tree_model).
 
+Tips:
+* Schrijf testen!
+* Het is mogelijk om een `BeweegActie` om te zetten in `NavigeerActie`s.
