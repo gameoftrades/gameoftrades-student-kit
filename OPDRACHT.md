@@ -1,7 +1,3 @@
-Handelaar
-=========
-
-
 Inleiding
 =========
 
@@ -50,6 +46,8 @@ De steden uit het vorige voorbeeld hebben de volgende goederen aangeboden of gev
 * Cambridge BIEDT stenen voor $10
 * Derry VRAAGT stenen voor $12
 
+Een manier om het probleem op te lossen is met een [beslissingsboom](https://en.wikipedia.org/wiki/Decision_tree_model).
+
 
 Opdracht 1 - inlezen van de gebiedsgegevens
 ===========================================
@@ -57,12 +55,37 @@ Opdracht 1 - inlezen van de gebiedsgegevens
 Het systeem moet in staat zijn om een handelswereld in te lezen. 
 Zie de folder `src/test/resources/kaarten` in de student kit voor voorbeelden van het in te lezen formaat.
 
+De volgende methode van Handelaar werkend gemaakt worden:
+
+```
+    WereldLader nieuweWereldLader();
+```
+
+Deze methode is al voorzien van een implementatie en delegeert door naar `WereldLaderImpl`. 
+Deze klasse bevat de te implementeren methode: 
+
+```
+    Wereld laad(String resource);
+```
+
+De methode geeft een Wereld object terug. Deze is onderdeel van de `gameoftrades-library`. Bestudeer eerst deze bibliotheek grondig.
+De resource parameter is de naam van het classpath resource met de wereld die geladen moet worden. 
+
 Eisen aan de opdracht:
+----------------------
 
 * de kaart van de wereld heeft *dynamische afmetingen* die bepaald worden door de aangeleverde kaart
 * zowel de `Kaart` als de `Markt` moeten dezelfde `Stad` instanties gebruiken. Dat wil zeggen dat bij het inlezen van de gegevens een Stad slechts *één keer geïnstantieerd* wordt.
 * alle steden die in de marktlijst worden genoemd moeten *gedefiniëerd zijn* in de stedenlijst. Het systeem geeft een foutmelding als dit niet zo is.
 * de testen in de bijgeleverde test (`WereldLaderImplTest`) moeten slagen.
+
+Tips:
+-----
+
+* Bestudeer eerst de gegeven `gameoftrades-library` grondig!
+* Maak gebruik van de gegeven testen. 
+* Bestudeer de testen en kijk hoe ze gebruik maken van de Handelaar.
+* Het coordinaat 0,0 is linksboven.
 
 
 Opdracht 2 - snelste pad tussen twee steden
@@ -90,6 +113,8 @@ Een mogelijk algoritme wat gebruikt kan worden voor het bepalen van het kortste 
 Een ander algoritme is [A*](http://www.policyalmanac.org/games/aStarTutorial.htm).
 
 Eisen aan de opdracht:
+----------------------
+
 * Het resulterende Pad moet een begaanbare route bevatten van de start naar eind coordinaten.
 * Er moet een begaanbaar pad berekend kunnen worden voor alle steden combinaties.
 * Het pad moet het snelste pad zijn (niet het kortste!).
@@ -97,6 +122,7 @@ Eisen aan de opdracht:
 * Het pad moet efficiënt berekend worden.
 
 Tip:
+----
 * Schrijf unit testen om je code (en de acceptatie criteria) te controleren.
 
 
@@ -125,6 +151,8 @@ De gehele lijst vormt op volgorde de route waarmee de handelaar de steden zal mo
 Een voorbeeld algoritme waarmee dit probleem kan worden opgelost is die voor het [travelling salesman probleem](https://en.wikipedia.org/wiki/Travelling_salesman_problem).
 
 Eisen aan de opdracht:
+----------------------
+
 * het algoritme *moet* gebruik maken van het kortste pad algoritme van de voorgaande opdracht
 * iedere stad wordt precies maar één keer aangedaan
 * de startstad bepaal je zelf; uiteraard naar aanleiding van wat het meest efficiënt is
@@ -132,6 +160,8 @@ Eisen aan de opdracht:
 * De route moet efficiënt berekend worden.
 
 Tips:
+-----
+
 * Schrijf testen!
 * Het uitrekenen van een Pad is duur. Voorkom onnodig extra rekenwerk.
 
@@ -161,15 +191,19 @@ Het handelsplan bestaat uit een lijst van Acties. Een `Actie` kan één van de v
 
 De simulatie zal alle acties in volgorde uitvoeren. Als een actie is ingebracht die niet uitvoerbaar is, dan zal het systeem eindigen met een foutmelding.
 
+Een manier om het probleem op te lossen is met een [beslissingsboom](https://en.wikipedia.org/wiki/Decision_tree_model).
+
 Eisen aan de opdracht:
+----------------------
+
 * het algoritme moet gebruik maken van het eigen kortste pad algoritme van een eerdere opdracht.
 * het handelsplan mag geen zetten doen die niet kunnen.
 * het handelsplan moet `NavigeerActie`s aanleveren voor beweging (geen BeweegActies). 
 * Het handelsplan moet kwaliteitief goed zijn (dwz winst maken en liefst veel!).
 * Het handelsplan moet efficiënt berekend worden.
 
-Een manier om het probleem op te lossen is met een [beslissingsboom](https://en.wikipedia.org/wiki/Decision_tree_model).
-
 Tips:
+-----
+
 * Schrijf testen!
 * Het is mogelijk om een `BeweegActie` om te zetten in `NavigeerActie`s.
