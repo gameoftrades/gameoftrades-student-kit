@@ -20,7 +20,7 @@ Om met Game of Trades mee te kunnen doen heb je een werkende Java ontwikkelomgev
 Deze bestaat uit de volgende ingredienten:
 
 * Java 8 Development Kit (JDK) 
-* Apache Maven 3.3+
+* [Apache Maven 3.3+](https://maven.apache.org/download.cgi), [installatie](https://maven.apache.org/install.html), [ubuntu](http://www.mkyong.com/maven/how-to-install-maven-in-ubuntu/)
 * IDE naar keuze (intelliJ, eclipse, netbeans)
 * Git   
 
