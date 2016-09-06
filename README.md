@@ -26,8 +26,10 @@ Deze bestaat uit de volgende ingredienten:
 
 ## Clonen van de Student Kit
 
+Clone je eigen project, niet de algemene student kit!
+
 ```
-> git clone https://github.com/gameoftrades/gameoftrades-student-kit.git
+> git clone https://github.com/gameoftrades/<git repo van mijn team>.git
 
 Cloning into 'gameoftrades-student-kit'...
 remote: Counting objects: 87, done.
