@@ -26,8 +26,10 @@ Deze bestaat uit de volgende ingredienten:
 
 ## Clonen van de Student Kit
 
+Clone je eigen project, niet de algemene student kit!
+
 ```
-> git clone https://github.com/gameoftrades/gameoftrades-student-kit.git
+> git clone https://github.com/gameoftrades/<git repo van mijn team>.git
 
 Cloning into 'gameoftrades-student-kit'...
 remote: Counting objects: 87, done.
@@ -44,7 +46,7 @@ In de `gameoftrades-student-kit` folder staat nu de student kit, klaar om geimpo
 
 Omdat ieder team uniek is maar je net een algemene repository hebt gecloned is het _noodzakelijk_ om een aantal team specifieke aanpassingen te maken.
 
-* In de `pom.xml` pas de waarde van de `artifactId` tag aan naar `got-teamNN` waarbij NN dan het team nummer (2 digits) is. Is het team nummer kleiner dan 10, plak er dan een 0 voor.
+* In de `pom.xml` pas de waarde van de `artifactId` tag aan naar `got-teamNN` waarbij NN dan het team nummer (2 digits) is. Is het team nummer kleiner dan 10, plak er dan een 0 voor. Wat het moet worden is <artifactId>got-teamNN</artifactId> dus NIET de naam van de tag veranderen van artifactId naar iets anders.
 
 ```xml
     <!-- Change Me -->
