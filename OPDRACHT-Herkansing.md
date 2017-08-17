@@ -8,13 +8,18 @@ Doe je dit blok voor het eerst, lees dan [de reguliere opdracht](OPDRACHT.md).
 Inleiding
 ---------
 
-Het leven van een Handelaar is altijd aan verandering onderhevig en tegelijkertijd blijft veel bij het zelfde. 
-Zo ook dit jaar. Het moet anders, maar toch het zelfde.
+Het leven van een Handelaar is altijd aan verandering onderhevig en tegelijkertijd blijft veel bij het zelfde.
+De balans van de macht schuift maar het land, en de handel, die blijft.  
+Zo ook dit jaar. Het is anders, maar toch lijkt het op vorig jaar. 
+Weet je niet meer hoe vorig jaar was, lees dan de reguliere opdracht om te herinneren.
 
 Opdracht 1
 ==========
 
-De wereld is niet veranderd, hoogstens wat meer gedetailleerd geworden. Deze opdracht is gelijk aan de reguliere opdracht 1.  
+De wereld is niet veranderd, hoogstens zijn er wat meer details die vroeger niet zo opvielen. 
+Een ijzige wind uit het noorden, draken-vuur uit het zuiden.
+ 
+Zonder Wereld kan de Handelaar niet, daarom is deze opdracht is gelijk aan de reguliere opdracht 1.  
 
 Opdracht 2
 ==========
@@ -23,7 +28,7 @@ De Handelaar wil nog steeds van A naar B, alleen nu op een andere manier.
 
 Wanneer je vorig jaar het Ant Race algoritme geïmplementeerd hebt, implementeer dan nu A-Ster.
 En andersom, wanneer je vorig jaar A-Ster hebt geïmplementeerd, implementeer dan het Ant Race algoritme. 
-Heb je vorig jaar iets anders geïmplementeerd kies dan voor Ant Race.         
+Heb je vorig jaar iets anders geïmplementeerd kies dan voor A-Ster.         
 
 De acceptatie criteria zijn gelijk aan die van de reguliere opdracht 2.
 
