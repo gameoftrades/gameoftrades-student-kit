@@ -46,7 +46,11 @@ De steden uit het vorige voorbeeld hebben de volgende goederen aangeboden of gev
 * Cambridge BIEDT stenen voor $10
 * Derry VRAAGT stenen voor $12
 
-Een manier om het probleem op te lossen is met een [beslissingsboom](https://en.wikipedia.org/wiki/Decision_tree_model).
+
+Herkansingsopdracht
+===================
+
+Voor de mensen die dit blok nogmaals moeten doen is er een speciale [herkansingsopdracht](OPDRACHT-Herkansing.md).
 
 
 Opdracht 1 - inlezen van de gebiedsgegevens
