@@ -17,7 +17,7 @@ De visuele omgeving maakt ook onderdeel uit van de student kit. Zie de 'Starten 
 
 Om met Game of Trades mee te kunnen doen heb je een werkende Java ontwikkelomgeving nodig. 
 
-Deze bestaat uit de volgende ingredienten:
+Deze bestaat uit de volgende ingrediënten:
 
 * Java 8 Development Kit (JDK) 
 * [Apache Maven 3.3+](https://maven.apache.org/download.cgi) - [installatie tips](https://maven.apache.org/install.html), [installatie op ubuntu](http://www.mkyong.com/maven/how-to-install-maven-in-ubuntu/)
@@ -40,7 +40,11 @@ Resolving deltas: 100% (13/13), done.
 Checking connectivity... done.
 ```
 
-In de `gameoftrades-student-kit` folder staat nu de student kit, klaar om geimporteerd te worden in je IDE.
+In de `gameoftrades-student-kit` folder staat nu de student kit, klaar om geïmporteerd te worden in je IDE.
+
+## Herkansingsopdracht
+
+Voor de mensen die dit blok nogmaals moeten doen is er een speciale [herkansingsopdracht](OPDRACHT-Herkansing.md).
 
 ## Team Specifieke Aanpassingen
 
@@ -120,17 +124,21 @@ Let op: De visuele omgeving is afhankelijk van jouw implementatie van Handelaar.
 
 Door de interface `io.gameoftrades.debug.Debuggable` te implementeren in je Algoritme klasse.
 
-Deze zorgt er voor dat de methode `setDebugger(Debugger debugger)` in het Algoritme geimplementeerd moet worden.
+Deze zorgt er voor dat de methode `setDebugger(Debugger debugger)` in het Algoritme geïmplementeerd moet worden.
 
-Als je dit als volgt doet dan heb je bij default een `DummyDebugger` (die niets doet) maar kan de gebruikersinterface de GuiDebugger zetten en jij, als je dat zou willen, de `AsciiArtDebugger` die naar de console debug uitvoer stuurt.
+Als je dit als volgt doet dan heb je bij default een `DummyDebugger` (die niets doet) maar kan de gebruikersinterface de `GuiDebugger` zetten en jij, als je dat zou willen, de `AsciiArtDebugger` die naar de console debug uitvoer stuurt.
 
 ```
+public class MijnSnelstePadAlgoritme implements SnelstePadAlgoritme, Debuggable {
+
     private Debugger debug = new DummyDebugger();
     
     @Override
     public void setDebugger(Debugger debugger) {
         this.debug = debugger;
     }
+    
 ```
 
-In de `Debugger` interface zitten verschillende methoden die domein objecten en andere data-structuren zichtbaar maken.
+In de `Debugger` interface zitten verschillende methoden die domein objecten en andere data-structuren zichtbaar maken in de gebruikersinterface.
+Door een van deze methoden aan te roepen tijdens de uitvoering van je algoritme wordt dit in de gebruikersinterface zichtbaar gemaakt als Stap.
