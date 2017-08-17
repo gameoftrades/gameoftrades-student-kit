@@ -42,10 +42,6 @@ Checking connectivity... done.
 
 In de `gameoftrades-student-kit` folder staat nu de student kit, klaar om geïmporteerd te worden in je IDE.
 
-## Herkansingsopdracht
-
-Voor de mensen die dit blok nogmaals moeten doen is er een speciale [herkansingsopdracht](OPDRACHT-Herkansing.md).
-
 ## Team Specifieke Aanpassingen
 
 Omdat ieder team uniek is maar je net een algemene repository hebt gecloned is het _noodzakelijk_ om een aantal team specifieke aanpassingen te maken.
@@ -72,6 +68,10 @@ Deze jar file kun je maken door het uitvoeren van een `mvn clean install`.
 Wanneer dit gelukt is vindt je in de `target` folder de jar file (got-teamNN-1.0.jar). 
 
 Mochten je tests falen en je toch een jar willen maken dan kan dat met `mvn clean install -DskipTests`
+
+## Herkansingsopdracht
+
+Voor de mensen die dit blok nogmaals moeten doen is er een speciale [herkansingsopdracht](OPDRACHT-Herkansing.md).
 
 # FAQ / How to
 
