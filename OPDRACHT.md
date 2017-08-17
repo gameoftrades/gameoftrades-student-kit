@@ -113,7 +113,7 @@ Deze implementerende klasse moet de methoden uit de interface bevatten. In dit g
 Deze `bereken` methode geeft een `Pad` terug. Dit is weer een interface waarvan weer een implementatie klasse gemaakt moet worden (`PadImpl`).
 Voor de functionaliteit die Pad moet aanbieden kan je in de JavaDoc van de Pad interface kijken.
 
-Een mogelijk algoritme wat gebruikt kan worden voor het bepalen van het kortste pad is het [Ant Race algoritme](http://blaeul.de/s.php?l=de&d=antraces).
+Een mogelijk algoritme wat gebruikt kan worden voor het bepalen van het kortste pad is [Ant Colony Optimization](https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms).
 Een ander algoritme is [A*](http://www.policyalmanac.org/games/aStarTutorial.htm).
 
 Eisen aan de opdracht:
@@ -122,7 +122,7 @@ Eisen aan de opdracht:
 * Het resulterende Pad moet een begaanbare route bevatten van de start naar eind coordinaten.
 * Er moet een begaanbaar pad berekend kunnen worden voor alle steden combinaties.
 * Het pad moet het snelste pad zijn (niet het kortste!).
-* Het pad moet kwaliteitief goed zijn.
+* Het pad moet kwalitatief goed zijn.
 * Het pad moet efficiënt berekend worden.
 
 Tip:
