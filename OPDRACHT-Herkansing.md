@@ -9,9 +9,10 @@ Inleiding
 ---------
 
 Het leven van een Handelaar is altijd aan verandering onderhevig en tegelijkertijd blijft veel bij het zelfde.
-De balans van de macht schuift maar het land, en de handel, die blijft.  
+De balans van de macht schuift maar het land, en de handel, die blijft.
+  
 Zo ook dit jaar. Het is anders, maar toch lijkt het op vorig jaar. 
-Weet je niet meer hoe vorig jaar was, lees dan de reguliere opdracht om te herinneren.
+Weet je niet meer hoe vorig jaar was, lees dan de introductie van de reguliere opdracht om te herinneren.
 
 Opdracht 1
 ==========
@@ -48,7 +49,12 @@ is dit jaar veel turbulenter. Naast de reguliere partijen die strijden om de mac
 
 Bedrijfseconomisch heeft dit ook gevolgen. Waar je vroeger gewoon nog Brood kon pendelen tussen Riverrun en Gulltown, een stabiele route met een fijne marge, is dit nu vrijwel onmogelijk geworden. Een vaste route is op het ogenblik een garantie voor een overval of verbranding door een van de strijdende partijen.   
 
-Enkel flink winst maken, zoals in de reguliere opdracht 4, is niet meer genoeg, de route mag zichzelf nu ook niet meer herhalen.  
+Enkel flink winst maken, zoals in de reguliere opdracht 4, is niet meer genoeg; om risico te spreiden moet nu iedere keer een ander product verhandeld worden.   
+ 
+Dat wil zeggen dat wanneer je Brood hebt gekocht in Riverrun en verkocht hebt in Gulltown, mag het plan daarna verder geen Brood meer verhandelen, enkel andere producten.
+
+Heeft het plan alle producten een keer verhandeld, dan is het klaar.
+   
  
 Eisen aan de opdracht:
 ----------------------
@@ -57,7 +63,8 @@ Eisen aan de opdracht:
 * het handelsplan moet geen zetten doen die niet kunnen.
 * het handelsplan moet `NavigeerActie`s aanleveren voor beweging (geen BeweegActies). 
 * Het handelsplan moet kwalitatief goed zijn (dwz winst maken en liefst veel!).
-* Het handelsplan moet een stad slechts één maal gebruiken om te kopen en/of te verkopen (een stad aandoen voor doorreis mag wel). 
+* Het handelsplan moet telkens een ander product verhandelen. 
+* Het handelsplan moet eindigen wanneer er geen nieuwe producten meer verhandeld kunnen worden.
 * Het handelsplan moet efficiënt berekend worden.
 
 Tips
