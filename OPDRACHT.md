@@ -113,8 +113,8 @@ Deze implementerende klasse moet de methoden uit de interface bevatten. In dit g
 Deze `bereken` methode geeft een `Pad` terug. Dit is weer een interface waarvan weer een implementatie klasse gemaakt moet worden (`PadImpl`).
 Voor de functionaliteit die Pad moet aanbieden kan je in de JavaDoc van de Pad interface kijken.
 
-Een mogelijk algoritme wat gebruikt kan worden voor het bepalen van het kortste pad is [Ant Colony Optimization](https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms).
-Een ander algoritme is [A*](http://www.policyalmanac.org/games/aStarTutorial.htm).
+Een algoritme wat gebruikt kan worden voor het bepalen van het kortste pad is [Dijkstra](https://www.quora.com/What-is-the-simplest-intuitive-proof-of-Dijkstra%E2%80%99s-shortest-path-algorithm), ook wel bekend als Antrace.
+Een ander algoritme is [A*](https://en.wikipedia.org/wiki/A*_search_algorithm).
 
 Eisen aan de opdracht:
 ----------------------
