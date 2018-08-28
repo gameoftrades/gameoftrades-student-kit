@@ -3,7 +3,7 @@
 
     <groupId>io.gameoftrades</groupId>
     <!-- Change Me -->
-    <artifactId>gameoftrades-student-kit</artifactId> <!-- got-teamNN -->
+    <artifactId>gameoftrades-student-kit</artifactId> <got-team35>
     <!-- --> 
     <version>0.1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
