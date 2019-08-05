@@ -10,7 +10,10 @@ import io.gameoftrades.studentNN.HandelaarImpl;
 public class StudentUI {
 
 	public static void main(String[] args) {
-		MainGui.toon(new HandelaarImpl(), TileSet.T32, "/kaarten/voorbeeld-kaart.txt");
+		MainGui.builder()
+		       .add(new HandelaarImpl())
+		       // Je kan hier eventueel extra algoritmen toevoegen dmv extra 'add' aanroepen.
+		       .toon(TileSet.T32, "/kaarten/voorbeeld-kaart.txt");
 	}
 	
 }
