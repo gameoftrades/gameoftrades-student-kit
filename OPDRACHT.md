@@ -89,7 +89,7 @@ Tips:
 * Bestudeer eerst de gegeven `gameoftrades-library` grondig!
 * Maak gebruik van de gegeven testen. 
 * Bestudeer de testen en kijk hoe ze gebruik maken van de Handelaar.
-* Het coordinaat 0,0 is linksboven.
+* Het coordinaat 1,1 is linksboven.
 
 
 Opdracht 2 - snelste pad tussen twee steden
